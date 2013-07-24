@@ -1,14 +1,5 @@
 
-/*
-* Author: Łukasz Holeczek
-* Template: Targer Bootstrap Theme
-* Version: 1.0.0 CSS & LESS
-* Bootstrap version: 2.3.1
-* Copyright 2013 creativeLabs
-* www: http://clabs.co
-* mail: lukasz@clabs.co
-* You can buy this theme on WrapBootstrap: https://wrapbootstrap.com/user/creativelabs
-*/
+
 
 @import "social-icons.css";
 
@@ -34,7 +25,7 @@ html {
 
 body {
     overflow-x: hidden;
-    background: #fafafa;
+    background: url('../img/b1.jpg');
     color: #a2a2a2;
     font-family: 'Lato',sans-serif;
     font-weight: 400;
@@ -288,8 +279,8 @@ section#home {
 }
 
 #slides .slides-container .container .caption h1,#slides .slides-container .container .caption p {
-    color: #0083b9;
-    text-shadow: 0 0 2px #202020
+    color:#fff;
+    text-shadow: 0 0 2px #000
 }
 
 #slides .slides-container .container .caption a {

@@ -29,8 +29,8 @@
 	<link href="css/style-responsive.min.css" rel="stylesheet" type="text/css">
 	<style>
 	h1.test {
-		color: #0083b9;
-	}
+		color: #fff;
+
 	</style>
 	
 	<!--[if lt IE 9 ]>
@@ -51,9 +51,32 @@
 	<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
 	<link rel="shortcut icon" href="ico/favicon.png">
 	<!-- end: Favicon and Touch Icons -->
+	<style>
+
+	.li_heart {
+		color:#D01F3C;
+	}
+
+	.li_star {
+		color:#FFFF88;
+	}
+
+	.li_key {
+		color:#EEEEEE;
+	}
+
+	.li_like {
+		color:#4096EE;
+	}
+
+	h1.test {
+		color:#D01F3C;
+	}
+
+	</style>
 
 </head>
-<body>
+<body data-stellar-background-ratio="0.5">
 	
 	<!--start: Header -->
 	<header>
@@ -133,39 +156,39 @@
 		      	<li>
 		        	<img src="img/s2.jpg" alt="Slide">
 		        	<div class="container">
-						<div class="caption right">
-		          			 <h1>El cuidado de tus hijos, en las mejores manos.</h1>
+						<div class="caption left">
+		          			 <h1 class="test">El cuidado de tus hijos, en las mejores manos.</h1>
 		        		</div>
 					</div>
 		      	</li>
 		      	<li>
 		        	<img src="img/s3.jpg" alt="Slider">
 		        	<div class="container">
-						<div class="caption center">
-		          			<h1>El desarrollo de los que mas quieres, de la forma que quieres.</h1>
+						<div class="caption left">
+		          			<h1 class="test">El desarrollo de los que mas quieres, de la forma que quieres.</h1>
 		        		</div>
 					</div>
 		      	</li>
 		      <li>
 		        <img src="img/s4.jpg" alt="Slider">
 		        <div class="container">
-		        	<div class="caption center">
-		        		 <h1>Las labores de tu hogar, en manos expertas.</h1>
+		        	<div class="caption right">
+		        		 <h1 class="test">Las labores de tu hogar, en manos expertas.</h1>
 		        	</div>
 		        </div>
 		      </li>
-		      <li>
+		     <!-- <li>
 		        <img src="img/s5.jpg" alt="Slider">
 		        <div class="container">
 		        	<div class="caption center">
-		        		 <h1>De los detalles, nos encargamos nosotros.</h1>
+		        		 <h1 class="test">De los detalles, nos encargamos nosotros.</h1>
 		        	</div>
 		        </div>
-		      </li>
+		      </li> -->
 		      <li>
 		        <img src="img/s6.jpg" alt="Slider">
 		        <div class="container">
-		        	<div class="caption center">
+		        	<div class="caption left">
 		        		 <h1>La felicidad de ellos es nuestra recompensa.</h1>
 		        	</div>
 		        </div>
@@ -202,7 +225,8 @@
 			<!-- end: Section About -->
 			
 			<!-- start: Section Services -->
-			<section id="servicios">
+			<section class="alpha60" id="servicios">
+
 
 				<!-- start: Section Header -->
 				<div class="section-header">
@@ -253,7 +277,7 @@
 
 				</div>
 				<!-- end: Row -->
-
+			
 			</section>
 			<!-- end: Section Services -->
 
@@ -263,7 +287,7 @@
 				<!-- start: Section Header -->
 				<div class="section-header">
 
-					<h2>Te ayudamos</h2>
+					<h2>CONTACTANOS</h2>
 
 				</div>
 				<!-- end: Section Header -->
@@ -329,7 +353,8 @@
 			<!-- end: Section Price Table -->
 
 			<!-- start: Section We Work For -->
-			<section id="clients">
+
+			<section  id="clients">
 
 				<!-- start: Section Header -->
 				<div class="section-header hidden-phone" >
@@ -338,7 +363,7 @@
 						<span style="text-align:center;font-size:46px;" class="span11">
 						<br/>
 						<br/>
-					<a href="tel:+56985055246">+569 8 505 5246</a>
+					<a class="test" href="tel:+56985055246">+569 8 505 5246</a>
 				</span>
 				</div>
 				<!-- end: Section Header -->
@@ -536,8 +561,9 @@
 <!-- start: Java Script -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="js/jquery-1.9.1.min.js"></script>
-<script src="js/cufon.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/stellar.js"></script>
+
 <script src="js/jquery.touchSwipe.min.js"></script>
 <script src="js/jquery.placeholder.min.js"></script>
 
@@ -550,6 +576,7 @@
 
 <script defer="defer" src="js/modernizr.js"></script>
 <script defer="defer" src="js/custom.min.js"></script>
+
    <script>
 $(document).ready(function(){
  
@@ -584,7 +611,12 @@ $('#submit3').click(function(){
     });
 
 });
-</script><!-- end: Java Script -->
+</script>
+<script>
+		$(window).stellar();
+		</script>
+
+<!-- end: Java Script -->
 
 </body>
 </html>
