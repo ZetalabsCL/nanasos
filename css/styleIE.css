@@ -3,5 +3,9 @@
     top: -130px;
     width: 105px;
     height: 50%;
-    border: none;
+    border: 10px solid #fff;
+    border-radius: 9em;
+    -webkit-border-radius: 9em;
+    -moz-border-radius: 9em;
+    behavior: url(../PIE.htc);
 }
