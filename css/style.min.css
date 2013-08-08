@@ -567,15 +567,32 @@ ul.clients-list li:last-child {
     font-weight: 700;
     padding: 36px 10px;
     border: 4px solid #fafafa;
-    -webkit-border-radius: 50em;
-    -moz-border-radius: 50em;
-    border-radius: 50em;
+    -webkit-border-radius: 0em;
+    -moz-border-radius: 0em;
+    border-radius: 10em;
     display: inline-block;
     width: 80px;
+    height: 80px;
     top: 45px;
     left: 50%;
     margin-left: -54px;
     position: absolute
+}
+
+.ico {
+    position: relative;
+    top: -130px;
+    width: 105px;
+    height: 50%;
+    border: 10px solid #fff;
+    border-radius: 9em;
+    -webkit-border-radius: 9em;
+    -moz-border-radius: 9em;
+}
+
+.npt {
+    position: relative;
+    top: -120px;
 }
 
 .price-table ul li.price span {
